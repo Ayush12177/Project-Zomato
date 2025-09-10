@@ -1,0 +1,68 @@
+.home-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.auth-buttons {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.auth-buttons a, .auth-buttons button {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.home-background-image {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1504674900247-0877df9cc836);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.saved-background-image {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1565299624946-b28f40a0ae38);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.welcome-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.welcome-message .auth-buttons {
+    position: static;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
